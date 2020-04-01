@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Add your title for the page in here -->
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- move these script tags to just before the closing <body> tag for performance -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
-
+ 
 <body>
 <!--Begin of Contanier-->
 <div class="container">
@@ -17,6 +19,7 @@
         <!--Begin of Column1-->
         <div class="col-sm">
             <!--Begin of Card1-->
+            <!-- NB::::: dont use inline styles, rather style these in an external .css stylesheet using the class -->
             <div class="card" style="width: 300px;margin: auto;text-align: center;height: auto;">
                 <!--Begin of image-->
                 <img class="card-img-top"src="night-wolf.jpg" alt="card image"
@@ -35,6 +38,7 @@
                     <!--End of Card Footer--></div>
                 
                 <!--Begin of Modal-->
+                <!-- NB::: you forgot the "" around the id name -->
                     <div class="modal fade" id=myModal1>
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
@@ -46,6 +50,7 @@
                 <!--End of Modal Header-->
                                 </div>
                 <!--Begin of Modal Body-->
+                <!-- use <h1>-<h6> or <p> tags for these, not <div>  -->
                                 <div class="modal-body">
                                     27A Bamboesvlei RD Ottery
                                 </div>
@@ -290,3 +295,6 @@
 
 
 </body>
+
+<!-- EXTRA COMMENTS -->
+<!-- Clean up the code to make it more readable -->
