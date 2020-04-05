@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+   
+    <link rel="Stylesheet" href="Stylesheet/custom.css"/>
+    
+</head>
+<body>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--My NavBar-->
+    <!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm bg-light">
+
+    <!-- Nav Bar -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+    </ul>
+<!--New User Card-->
+<button type="button"class="btn btn-outline-primary"data-toggle="modal"
+         data-target="#myModalNewCard">Create New Card
+        </button>
+<!--Start of Modal-->
+    <div class="modal fade" id=myModalNewCard>
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+<!--Begin of Modal header-->
+                <div class="modal-header">
+                    <h4 class="modal-title">Create New User Card</h4>
+                    <button type="button" class="close"
+                    data-dismiss="modal">&times;</button>
+<!--End of Modal Header-->
+                </div>
+<!--Begin of Modal Body-->
+                <div class="modal-body">
+                    <div class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="addon-wrapping">Enter User Name:</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                      </div>
+                      <div class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="addon-wrapping">Enter Email:</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="addon-wrapping">
+                      </div>
+                      <div class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="addon-wrapping">Enter Phone Number:</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Cellphone/Landline Number" aria-label="Cellphone/Landline Number" aria-describedby="addon-wrapping">
+                      </div>
+                      <div class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="addon-wrapping">Enter Home Address:</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Users Home Address" aria-label="Users Home Address" aria-describedby="addon-wrapping">
+                      </div>
+                      <div class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="addon-wrapping">Enter Next of Kin Name:</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Next of Kin Name and Surname" aria-label="Next of Kin Name and Surname" aria-describedby="addon-wrapping">
+                      </div>
+                      <div class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="addon-wrapping">Enter Next of Kin Reltionship:</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Next of Kin Reltionship" aria-label="Next of Kin Reltionship" aria-describedby="addon-wrapping">
+                      </div>
+                      <div class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="addon-wrapping">Enter Next of Kin Phone Number:</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Next of Kin Cellphone Number" aria-label="Next of Kin Cellphone Number" aria-describedby="addon-wrapping">
+                      </div>
+                      <div class="input-group flex-nowrap">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="addon-wrapping">Enter Next of Kin Email:</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Next of Kin Email Address" aria-label="Next of Kin Email Address" aria-describedby="addon-wrapping">
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-primary">Save New Card</button>
+                  </div>
+            
+<!--End of Modal Body-->
+                </div>
+                
+            </div>
+<!--End of Modal-->
+    </div> 
+</nav>
+
+<h2>Michael Manuel Class2 Web Development Project</h2>
+<!--Landing Page-->
+<style>
+    body{
+        background-image: url(https://images.pexels.com/photos/3801030/pexels-photo-3801030.jpeg?cs=srgb&dl=photo-of-trees-in-forest-3801030.jpg&fm=jpg);
+    }
+    h2{
+      color:white
+  }
+</style>
+<!--Container for my cards-->
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <!--Heres Card1-->
+<div class="card card-3">
+    <!--Start of image-->
+    <img class="card-img-top"src="night-wolf.jpg" alt="card image"
+    style="width: 100%;height: 50%;">
+    <!--End of a image-->
+    <!--Card Body-->
+    <div class="card-body">
+        <h1 class="card-title">Michael Manuel</h1>
+        <p class="card-text">michaeldon0204@gmail.com</p>
+        <p class="card-text">0749660741</p>
+    <!--End of Card body-->
+    </div>
+<!--Start of Card footer-->
+    <div class="card-footer">
+        <button type="button"class="btn btn-outline-primary"data-toggle="modal"
+         data-target="#myModal1">Futher Information
+        </button>
+<!--Start of Modal-->
+    <div class="modal fade" id=myModal1>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+<!--Begin of Modal header-->
+                <div class="modal-header">
+                    <h4 class="modal-title">Futher Information</h4>
+                    <button type="button" class="btn btn-outline-danger"
+                    data-dismiss="modal">Close</button>
+<!--End of Modal Header-->
+                </div>
+<!--Begin of Modal Body-->
+                <div class="modal-body">
+                    27A Bamboesvlei RD Ottery
+                </div>
+                <div class="modal-body">
+                    Ashwin John Abrahams
+                </div>
+                <div class="modal-body">
+                    Brother
+                </div>
+                <div class="modal-body">
+                    0722122242
+                    ashwin.j.abrahams@gmail.com
+                </div>
+<!--End of Modal Body-->
+                </div>
+            </div>
+            
+<!--End of Modal-->
+    </div> 
+<!--Deleting Modal--> 
+<button type="button"class="btn btn-outline-danger"data-toggle="modal"
+data-target="#myModal5">Delete User Card
+</button>
+<!--Start of Modal-->
+<div class="modal fade" id=myModal5>
+<div class="modal-dialog modal-dialog-centered">
+   <div class="modal-content">
+<!--Begin of Modal header-->
+       <div class="modal-header">
+           <h4 class="modal-title">Are you sure you what to delete user card?</h4>
+           <button type="button" class="btn btn-outline-danger"
+           data-dismiss="modal">Close</button>
+<!--End of Modal Header-->
+       </div>
+<!--Begin of Modal Body-->
+       <div class="modal-body">
+           <button type="button" class="btn btn-outline-primary btn-block">Yes</button>
+       </div>
+       <div class="modal-body">
+           <button type="button" class="btn btn-outline-danger btn-block">No</button>
+       </div>
+<!--End of Modal Body-->
+       </div>
+   </div>
+   
+<!--End of Modal-->
+</div>     
+<!--End of Card footer-->
+    </div>
+<!--End of Card1-->
+    </div> 
+      </div>
+
+      <div class="col-sm">
+          <!--Heres Card2-->
+<div class="card card-3">
+    <!--Start of image-->
+    <img class="card-img-top"src="wolf.jpg" alt="card image"
+    style="width: 100%;height: 50%;">
+    <!--End of a image-->
+    <!--Card Body-->
+    <div class="card-body">
+        <h1 class="card-title">Ashwin Abrahams</h1>
+        <p class="card-text">ashwin.j.abrahams@gmail.com</p>
+        <p class="card-text">0722122242</p>
+    <!--End of Card body-->
+    </div>
+<!--Start of Card footer-->
+    <div class="card-footer">
+        <button type="button"class="btn btn-outline-primary"data-toggle="modal"
+         data-target="#myModal1">Futher Information
+        </button>
+<!--Start of Modal-->
+    <div class="modal fade" id=myModal2>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+<!--Begin of Modal header-->
+                <div class="modal-header">
+                    <h4 class="modal-title">Futher Information</h4>
+                    <button type="button" class="btn btn-outline-danger"
+                    data-dismiss="modal">Close</button>
+<!--End of Modal Header-->
+                </div>
+<!--Begin of Modal Body-->
+                <div class="modal-body">
+                    28 Lotus RD Lansdown
+                </div>
+                <div class="modal-body">
+                    Michael Manuel
+                </div>
+                <div class="modal-body">
+                    Brother
+                </div>
+                <div class="modal-body">
+                    0749660741
+                    michaeldon0204@gmail.com
+                </div>
+<!--End of Modal Body-->
+                </div>
+            </div>
+            
+<!--End of Modal-->
+    </div> 
+<!--Deleting Modal--> 
+<button type="button"class="btn btn-outline-danger"data-toggle="modal"
+    data-target="#myModal5">Delete User Card
+   </button>
+<!--Start of Modal-->
+<div class="modal fade" id=myModal5>
+   <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+<!--Begin of Modal header-->
+           <div class="modal-header">
+               <h4 class="modal-title">Are you sure you what to delete user card?</h4>
+               <button type="button" class="btn btn-outline-danger"
+               data-dismiss="modal">Close</button>
+<!--End of Modal Header-->
+           </div>
+<!--Begin of Modal Body-->
+           <div class="modal-body">
+               <button type="button" class="btn btn-outline-primary btn-block">Yes</button>
+           </div>
+           <div class="modal-body">
+               <button type="button" class="btn btn-outline-danger btn-block">No</button>
+           </div>
+<!--End of Modal Body-->
+           </div>
+       </div>
+       
+<!--End of Modal-->
+</div>        
+<!--End of Card footer-->
+    </div>
+<!--End of Card-->
+    </div> 
+      </div>
+
+
+      <div class="col-sm">
+<!--Heres Card3-->
+<div class="card card-3">
+<!--Start of image-->
+        <img class="card-img-top"src="wolf-2288533_1920.jpg" alt="card image"
+        style="width: 100%;height: 50%;">
+<!--End of a image-->
+<!--Card Body-->
+        <div class="card-body">
+            <h1 class="card-title">Antonio Williams</h1>
+            <p class="card-text">AntonioWilliams135A@gmail.com</p>
+            <p class="card-text">0627752517</p>
+<!--End of Card body-->
+        </div>
+<!--Start of Card footer-->
+        <div class="card-footer">
+            <button type="button"class="btn btn-outline-primary"data-toggle="modal"
+             data-target="#myModal3">Futher Information
+            </button>
+<!--Start of Modal-->
+        <div class="modal fade" id=myModal3>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+<!--Begin of Modal header-->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Futher Information</h4>
+                        <button type="button" class="btn btn-outline-danger"
+                        data-dismiss="modal">Close</button>
+<!--End of Modal Header-->
+                    </div>
+<!--Begin of Modal Body-->
+                    <div class="modal-body">
+                        27A Bamboesvlei RD Ottery
+                    </div>
+                    <div class="modal-body">
+                        Reece Simon
+                    </div>
+                    <div class="modal-body">
+                        Brother
+                    </div>
+                    <div class="modal-body">
+                        0677432579
+                        reecesimon84@gmail.com
+                    </div>
+<!--End of Modal Body-->
+                    </div>
+                </div>
+
+<!--End of Modal-->
+        </div> 
+<!--Deleting Modal--> 
+        <button type="button"class="btn btn-outline-danger"data-toggle="modal"
+        data-target="#myModal5">Delete User Card
+       </button>
+    <!--Start of Modal-->
+    <div class="modal fade" id=myModal5>
+       <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+    <!--Begin of Modal header-->
+               <div class="modal-header">
+                   <h4 class="modal-title">Are you sure you what to delete user card?</h4>
+                   <button type="button" class="btn btn-outline-danger"
+                   data-dismiss="modal">Close</button>
+    <!--End of Modal Header-->
+               </div>
+    <!--Begin of Modal Body-->
+               <div class="modal-body">
+                   <button type="button" class="btn btn-outline-primary btn-block">Yes</button>
+               </div>
+               <div class="modal-body">
+                   <button type="button" class="btn btn-outline-danger btn-block">No</button>
+               </div>
+    <!--End of Modal Body-->
+               </div>
+           </div>
+           
+    <!--End of Modal-->
+    </div>        
+<!--End of Card footer-->
+        </div>
+<!--End of Card3-->
+        </div> 
+      </div>
+      <div class="col-sm">
+
+<!--Heres Card4-->
+<div class="card card-3">
+<!--Start of image-->
+    <img class="card-img-top"src="dog.jpg" alt="card image"
+    style="width: 100%;height: 50%;">
+    <!--End of a image-->
+    <!--Card Body-->
+    <div class="card-body">
+        <h1 class="card-title">Reece Simon</h1>
+        <p class="card-text">reecesimon84@gmail.com</p>
+        <p class="card-text">0677432579</p>
+    <!--End of Card body-->
+    </div>
+    <!--Start of Card footer-->
+    <div class="card-footer">
+        <button type="button"class="btn btn-outline-primary"data-toggle="modal"
+         data-target="#myModal4">Futher Information
+        </button>
+    <!--Start of Modal-->
+    <div class="modal fade" id=myModal4>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+    <!--Begin of Modal header-->
+                <div class="modal-header">
+                    <h4 class="modal-title">Futher Information</h4>
+                    <button type="button" class="btn btn-outline-danger"
+                    data-dismiss="modal">Close</button>
+    <!--End of Modal Header-->
+                </div>
+    <!--Begin of Modal Body-->
+                <div class="modal-body">
+                    34 Conifer Close Green Field Park Ottery
+                </div>
+                <div class="modal-body">
+                    Antiono Williams
+                </div>
+                <div class="modal-body">
+                    Brother
+                </div>
+                <div class="modal-body">
+                    0627752517
+                    AntonioWilliams135A@gmail.com
+                </div>
+    <!--End of Modal Body-->
+                </div>
+            </div>
+            
+    <!--End of Modal-->
+    </div>
+    <!--Deleting Modal-->
+    <button type="button"class="btn btn-outline-danger"data-toggle="modal"
+    data-target="#myModal5">Delete User Card
+   </button>
+<!--Start of Modal-->
+<div class="modal fade" id=myModal5>
+   <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+<!--Begin of Modal header-->
+           <div class="modal-header">
+               <h4 class="modal-title">Are you sure you what to delete user card?</h4>
+               <button type="button" class="btn btn-outline-danger"
+               data-dismiss="modal">Close</button>
+<!--End of Modal Header-->
+           </div>
+<!--Begin of Modal Body-->
+           <div class="modal-body">
+               <button type="button" class="btn btn-outline-primary btn-block">Yes</button>
+           </div>
+           <div class="modal-body">
+               <button type="button" class="btn btn-outline-danger btn-block">No</button>
+           </div>
+<!--End of Modal Body-->
+           </div>
+       </div>
+       
+<!--End of Modal-->
+</div>       
+    <!--End of Card footer-->
+    </div>
+    <!--End of Card4-->
+    </div> 
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
